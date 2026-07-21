@@ -91,12 +91,14 @@ SDD 行动营完整四周材料,作为本书第 3 章工具链全景与第 7-8 �
 
 | 周 | 主题 | 引入工具 | 开源许可 |
 |:--|:--|:--|:--|
-| [Week 1](./week1/) | SDD 基础 + grill-me 三件套 | [grill-me / to-issues / write-a-skill](https://github.com/mattpocock/skills) | MIT |
+| [Week 1](./week1/) | SDD 基础 + grill-me 三件套 | [grill-me / to-tickets / writing-great-skills](https://github.com/mattpocock/skills) | MIT |
 | [Week 2](./week2/) | OpenSpec 登场 | [OpenSpec](https://github.com/Fission-AI/OpenSpec) | Apache 2.0 |
 | [Week 3](./week3/) | BMAD 多角色 | [BMAD](https://github.com/bmad-code-org/BMAD-METHOD) | MIT |
 | [Week 4](./week4/) | Superpowers 完整方法论 | [Superpowers](https://github.com/obra/superpowers) | MIT |
 
 每一周都包含 `specs/` · `code/` · `advance/`(进阶问答)三个目录。
+
+> **工具时效说明(2026-07 核实)**:Matt Pocock 的 skills 集合在本书成书后有调整——`to-issues` 更名为 `to-tickets`;`write-a-skill` 已移除,由 `writing-great-skills` 取代;安装改为交互式 `npx skills@latest add mattpocock/skills` + 运行一次 `/setup-matt-pocock-skills`。仓库内容已按新版对齐,完整对照见 [图书配套页](https://kage-ai.com/sdd/#tooling)。
 
 ---
 
@@ -115,6 +117,7 @@ SDD 行动营完整四周材料,作为本书第 3 章工具链全景与第 7-8 �
 ## 🔗 相关资源
 
 - 配套图书:《SDD 实战:规范驱动开发之道》 · 人民邮电出版社 · 异步图书
+- **图书配套页**:[kage-ai.com/sdd](https://kage-ai.com/sdd/) —— 内容增强、工具时效说明与勘误
 - 作者主页:[kage-ai.com](https://kage-ai.com/zh/)
 - 极客时间专栏:[Agent 设计模式之美](https://time.geekbang.org/column/intro/101162601) · [Claude Code 工程化实战](https://time.geekbang.org/column/intro/101113501)
 - 公众号:咖哥 AI

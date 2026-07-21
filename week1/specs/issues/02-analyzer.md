@@ -1,6 +1,6 @@
 # Issue #02 · Analyzer Agent
 
-> Week 1 · 第 3 节 · to-issues 展开产物（参考版 v1.0）
+> Week 1 · 第 3 节 · to-tickets 展开产物（参考版 v1.0）
 > 源自 [../agents-prd.md](../agents-prd.md)
 
 ## Depends on

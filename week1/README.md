@@ -15,15 +15,16 @@
 Week 1 装 3 个开源 skill（来自 [mattpocock/skills](https://github.com/mattpocock/skills)）：
 
 ```bash
-# Claude Code
-npx skills@latest add mattpocock/skills/grill-me        -a claude-code
-npx skills@latest add mattpocock/skills/to-issues        -a claude-code
-npx skills@latest add mattpocock/skills/write-a-skill   -a claude-code
+# 1. 安装（交互式选择 skill 与 coding agent）
+npx skills@latest add mattpocock/skills
 
-# OpenCode
-npx skills@latest add mattpocock/skills/grill-me        -a opencode
-npx skills@latest add mattpocock/skills/to-issues        -a opencode
-npx skills@latest add mattpocock/skills/write-a-skill   -a opencode
+# 2. 每个 repo 跑一次，配置 tracker（选 Local markdown）
+/setup-matt-pocock-skills
 ```
+
+> **工具时效说明（2026-07 核实）**：Matt Pocock 的 skills 集合已调整——
+> `to-issues` 更名为 **`to-tickets`**；`write-a-skill` 已移除，由 **`writing-great-skills`**（写好 skill 的参考文档）取代；
+> 安装方式改为交互式，不再用 `-a <agent>` 逐个指定。`grill-me` 名称未变。
+> 详见 [kage-ai.com/sdd](https://kage-ai.com/sdd/#tooling)。
 
 skill 靠 description 字段自动触发 · 无需 `/skill` 前缀。

@@ -18,4 +18,4 @@
 
 所以多 Agent 项目的 spec 目录不是三份 agent spec，是**一份高阶 PRD + 一组带 depends_on 的 issue 任务票**。PRD 管总流程和 Agent 职责概要，每份 issue 管自己这个 Agent 的数据契约 / 触发 / 失败 / 可观测性。缺了 issue 的 `depends_on` 字段，多 Agent 系统就只是三个独立脚本被串在一起，不是一个真正的协作系统。
 
-Week 1 第 3 节让你写 `specs/agents-prd.md` + 用 `to-issues` 展开到 `specs/issues/*.md` 的时候用的就是这个分层——现在回头看，你应该更能理解为什么协作契约必须藏在每份 issue 的 `depends_on` 里，而不是塞进一份大文档。
+Week 1 第 3 节让你写 `specs/agents-prd.md` + 用 `to-tickets` 展开到 `specs/issues/*.md` 的时候用的就是这个分层——现在回头看，你应该更能理解为什么协作契约必须藏在每份 issue 的 `depends_on` 里，而不是塞进一份大文档。

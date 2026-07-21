@@ -1,7 +1,7 @@
 # AI 知识库 · 三 Agent PRD · 参考版 v1.0
 
 > Week 1 · 第 3 节 · B 路产出示例
-> 跑 `grill-me` 问清"协作意图"后，先写这份高阶 PRD，再用 `to-issues` 展开成 3 份任务票（见 [issues/](./issues/)）。
+> 跑 `grill-me` 问清"协作意图"后，先写这份高阶 PRD，再用 `to-tickets` 展开成 3 份任务票（见 [issues/](./issues/)）。
 
 ## 总流程
 
@@ -13,7 +13,7 @@
 - **analyzer**: 读 raw · 给每条打 3 维度标签（tech / innovation / difficulty）· 存 `knowledge/tagged/{date}.json`
 - **organizer**: 读 tagged · 整理成 `knowledge/articles/{date}.md`
 
-## 开放问题（用 to-issues 展开为带 depends_on + acceptance 的任务票）
+## 开放问题（用 to-tickets 展开为带 depends_on + acceptance 的任务票）
 
 - 上游失败下游怎么办？
 - 数据怎么传？文件标记 or 消息队列？
@@ -33,4 +33,4 @@
 
 ---
 
-**下一步**：运行 `to-issues` 展开为 [issues/01-collector.md](./issues/01-collector.md) / [issues/02-analyzer.md](./issues/02-analyzer.md) / [issues/03-organizer.md](./issues/03-organizer.md) 三份任务票。每份 issue 自带 `depends_on` / `acceptance` / 对应 schema，组合起来就是完整的协作契约。
+**下一步**：运行 `to-tickets` 展开为 [issues/01-collector.md](./issues/01-collector.md) / [issues/02-analyzer.md](./issues/02-analyzer.md) / [issues/03-organizer.md](./issues/03-organizer.md) 三份任务票。每份 issue 自带 `depends_on` / `acceptance` / 对应 schema，组合起来就是完整的协作契约。
