@@ -1,5 +1,28 @@
 # Week 3
 
+## 代码在哪
+
+本周实操文档带你从 BMAD 规划一路做到 metrics collector 落地。两个分支各有分工：
+
+| 分支 | 内容 | 什么时候用 |
+|:--|:--|:--|
+| `master` | 起始基线，7 个 Agent 已就位，没有 metrics 相关代码 | 跟着文档动手时从这里出发 |
+| `feature/add-metrics-collector-local` | 完成态参考答案 | 做完了想对答案，或者中途卡住想看成品 |
+
+```bash
+# 对答案
+git fetch origin
+git checkout feature/add-metrics-collector-local
+```
+
+完成态分支里能看到文档提到的全部产物：
+
+- `code/workflows/metrics_collector.py` — `track_metrics` decorator 与 `flush_metrics_node`
+- `code/openspec/changes/add-metrics-collector/` — proposal / design / spec / tasks 四件套
+- `code/_bmad-output/planning-artifacts/` — BMAD 阶段产出的 PRD 与架构文档
+
+实操文档里的代码块是命令与关键片段，完整源码以本仓库为准。
+
 ## 文章
 
 - [BMAD 的 12+ 角色不是越多越好 · 怎么挑](./advance/01-BMAD的12角色怎么挑.md)
