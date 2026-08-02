@@ -1,5 +1,22 @@
 # Week 2
 
+## 代码在哪
+
+`code/` 目录是 `add-analyzer-retry-policy` 这个 change **做完之后**的状态，retry 已经落在 `pipeline/model_client.py` 的 `with_retry()` 装饰器上。
+
+跟着实操文档动手时，对照关系是这样：
+
+| 文档里说的 | 仓库里的位置 |
+|:--|:--|
+| change 的 proposal / design / spec / tasks | `code/openspec/changes/archive/2026-04-20-add-analyzer-retry-policy/`（已 archive） |
+| 合并后的主规范 | `code/openspec/specs/analyzer-retry-policy/spec.md` |
+| retry 实现 | `code/pipeline/model_client.py` — `with_retry()` 与 `@with_retry()` 装饰的 `chat()` |
+| 验收测试 | `code/tests/test_retry.py` |
+
+文档里 `/opsx:archive` 之前的路径（`openspec/changes/add-analyzer-retry-policy/`）在仓库里已经归档，这是 OpenSpec 的正常生命周期，不是文件丢了。
+
+实操文档是流水账，代码块给的是命令与关键片段，完整源码以本仓库为准。
+
 ## 文章
 
 - [OpenSpec 的 7+ 命令哪个最值得学](./advance/01-OpenSpec命令优先级.md)

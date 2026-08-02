@@ -1,15 +1,19 @@
 """
-pipeline/pipeline.py · 四步流水线（基线版本 · 无 retry）
+pipeline/pipeline.py · 四步流水线（add-analyzer-retry-policy 完成后的状态）
 
 Step 1: collect · 从 GitHub Trending 采集
 Step 2: analyze · LLM 逐条分析
 Step 3: organize · 去重 + 格式化
 Step 4: save · 写入 knowledge/articles/
 
-⚠️ 已知问题 · Step 2 调 LLM 时瞬时故障（timeout / rate limit / 5xx）会**直接崩溃**:
-- 当前代码没有 retry · 第 N 条挂掉整个 pipeline 就没了
+Week 2 实操要解决的原始问题 · Step 2 调 LLM 时瞬时故障（timeout / rate limit /
+5xx）会直接崩溃:
+- 没有 retry · 第 N 条挂掉整个 pipeline 就没了
 - 前 N-1 条的 token 成本沉没 · 当天知识库空
-- 修复方法 · Week 2 的 OpenSpec 实操 · 走一个 add-analyzer-retry-policy change
+
+现在这个问题已经修好 · retry 落在 pipeline/model_client.py 的 with_retry()
+装饰器上，本文件只处理内容层错误（坏 JSON 降级默认值，不重试）。
+整个修复过程见 openspec/changes/archive/2026-04-20-add-analyzer-retry-policy/
 
 运行方式:
     python3 -m pipeline.pipeline --limit 20

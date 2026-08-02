@@ -6,8 +6,12 @@ pipeline/model_client.py · 统一 LLM 调用接口
     LLM_BASE_URL=https://api.deepseek.com
     LLM_MODEL=deepseek-chat
 
-注意 · 本文件不做任何 retry · 瞬时故障（timeout / rate limit）会直接向上抛。
-Week 2 的 OpenSpec 实操就是要在这一层上加 retry 机制。
+retry 机制就落在这一层 · chat() 由 with_retry() 装饰，瞬时故障（timeout /
+rate limit / 5xx）走指数退避，重试耗尽抛 RetryExhaustedError。
+
+这是 Week 2 的 add-analyzer-retry-policy change 做完之后的状态。想看动手前的
+样子，翻 openspec/changes/archive/2026-04-20-add-analyzer-retry-policy/ 里的
+proposal 与 spec —— 那份 change 描述的正是这段代码从无到有的过程。
 """
 
 from __future__ import annotations
