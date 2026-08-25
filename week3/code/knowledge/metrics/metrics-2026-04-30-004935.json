@@ -1,0 +1,58 @@
+{
+  "workflow_start": "2026-04-29T16:49:32.607771+00:00",
+  "strategy": "standard",
+  "records": [
+    {
+      "node": "plan",
+      "start_time": "2026-04-29T16:49:32.607771+00:00",
+      "end_time": "2026-04-29T16:49:32.607788+00:00",
+      "latency_ms": 0.02,
+      "status": "success",
+      "cost_snapshot": {},
+      "iteration": 0
+    },
+    {
+      "node": "collect",
+      "start_time": "2026-04-29T16:49:32.608169+00:00",
+      "end_time": "2026-04-29T16:49:33.276491+00:00",
+      "latency_ms": 668.33,
+      "status": "success",
+      "cost_snapshot": {},
+      "iteration": 0
+    },
+    {
+      "node": "analyze",
+      "start_time": "2026-04-29T16:49:33.276947+00:00",
+      "end_time": "2026-04-29T16:49:34.889241+00:00",
+      "latency_ms": 1612.31,
+      "status": "success",
+      "cost_snapshot": {},
+      "iteration": 0
+    },
+    {
+      "node": "review",
+      "start_time": "2026-04-29T16:49:34.889627+00:00",
+      "end_time": "2026-04-29T16:49:35.023447+00:00",
+      "latency_ms": 133.83,
+      "status": "success",
+      "cost_snapshot": {},
+      "iteration": 0
+    },
+    {
+      "node": "organize",
+      "start_time": "2026-04-29T16:49:35.023905+00:00",
+      "end_time": "2026-04-29T16:49:35.023926+00:00",
+      "latency_ms": 0.02,
+      "status": "success",
+      "cost_snapshot": {},
+      "iteration": 1
+    }
+  ],
+  "summary": {
+    "total_latency_ms": 2414.51,
+    "total_cost_yuan": 0.0,
+    "node_count": 5,
+    "review_iterations": 1,
+    "errors": 0
+  }
+}
